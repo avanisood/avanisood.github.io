@@ -1,89 +1,79 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f0f0f0;
-    color: #111;
-    padding: 20px;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo {
-    font-weight: bold;
-    font-size: 24px;
-  }
-  nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-  }
-  nav a:hover {
-    border-bottom: 2px solid #111;
-  }
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-  }
-  .text h1 {
-    font-size: 48px;
-  }
-  .text span {
-    font-weight: bold;
-    background: #f6caca;
-    padding: 0 5px;
-  }
-  .text p {
-    margin-top: 10px;
-    font-size: 18px;
-    max-width: 500px;
-  }
-  .image img {
-    width: 300px;
-    height: auto;
-    border: 4px solid #111;
-    box-shadow: 5px 5px 0 #333;
-  }
-  .scroll-socials {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .socials a img {
-    width: 24px;
-    margin: 0 8px;
-  }
-  
-  .photos {
-    margin-top: 40px;
-    text-align: center;
-  }
-  
-  .photo {
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .photo img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-  }
-  
-  .photo p {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-/*going back :)*/
+/* ===== BIRTHPLACE SECTION ===== */
+.birthplace-section {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+
+.birthplace-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.birthplace-img img {
+  width: 280px;
+  border-radius: 12px;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.birthplace-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.birthplace-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #111;
+  position: relative;
+}
+
+.birthplace-text h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 6px;
+  background-color: #ff5722;
+  opacity: 0.3;
+  border-radius: 2px;
+}
+
+.birthplace-text p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.education__title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.education__desc {
+  color: var(--text-color);
+  margin-top: .25rem;
+  font-size: var(--small-font-size);
+}
+
+.skills__item {
+  background-color: var(--white-color);
+  padding: .75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  color: var(--black-color);
+  text-align: center;
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.1);
+}
