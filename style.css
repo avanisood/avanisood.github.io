@@ -1,79 +1,61 @@
-/* ===== BIRTHPLACE SECTION ===== */
-.birthplace-section {
-  padding: 60px 0;
-  background-color: #f4f4f4;
+.section {
+  padding: 4rem 0;
 }
-
-.birthplace-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 20px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.birthplace-img img {
-  width: 280px;
-  border-radius: 12px;
-  border: 4px solid #fff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-.birthplace-text {
-  flex: 1;
-  min-width: 280px;
-}
-
-.birthplace-text h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  color: #111;
+.section__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
   position: relative;
 }
-
-.birthplace-text h2::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 40px;
-  height: 6px;
-  background-color: #ff5722;
-  opacity: 0.3;
-  border-radius: 2px;
-}
-
-.birthplace-text p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.7;
-}
-
-.education__title {
-  font-size: var(--h2-font-size);
+.section__title span {
   color: var(--first-color);
-  font-weight: var(--font-semi-bold);
 }
 
-.education__desc {
+.about__container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: center;
+}
+
+.about__img img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about__description {
+  font-size: 1rem;
+  line-height: 1.8;
   color: var(--text-color);
-  margin-top: .25rem;
-  font-size: var(--small-font-size);
 }
 
-.skills__item {
-  background-color: var(--white-color);
-  padding: .75rem 1rem;
+.about__data li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about__data i {
+  color: var(--first-color);
+  font-size: 1.2rem;
+}
+
+.button {
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
-  font-weight: var(--font-medium);
-  color: var(--black-color);
-  text-align: center;
-  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
 }
