@@ -1,33 +1,75 @@
-<section class="section" id="details">
-  <div class="container">
-    <h2 class="section__title">Details<span>.</span></h2>
-    <div class="details__container grid">
-      <!-- Card 1: Birthplace -->
-      <div class="details__content">
-        <div class="details__icon">
-          <i class="ri-map-pin-line"></i>
-        </div>
-        <h3 class="details__title">Birthplace</h3>
-        <p class="details__description">Shimla, Himachal Pradesh</p>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avani Sood</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-      <!-- Card 2: Education -->
-      <div class="details__content">
-        <div class="details__icon">
-          <i class="ri-graduation-cap-line"></i>
-        </div>
-        <h3 class="details__title">Education</h3>
-        <p class="details__description">UG1 Student at IIT</p>
-      </div>
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>Avani Sood</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#cv">CV</a>
+    </nav>
+  </header>
 
-      <!-- Card 3: Skills -->
-      <div class="details__content">
-        <div class="details__icon">
-          <i class="ri-code-s-slash-line"></i>
-        </div>
-        <h3 class="details__title">Skills</h3>
-        <p class="details__description">C, C++, HTML, CSS, JS, React, Git</p>
-      </div>
+  <!-- ===== Hero Section with Profile Pic ===== -->
+  <section class="hero">
+    <div class="text">
+      <h2>Hi, I'm Avani 👋</h2>
+      <p>
+        I’m a Computer Science student passionate about building thoughtful, user-centered technology that solves real-world problems. I enjoy solving puzzles, coding efficient systems, and diving into exciting learning experiences across tech, writing, and innovation.
+      </p>
     </div>
-  </div>
-</section>
+    <div class="image">
+      <img src="assets/profile.jpg" alt="Avani Sood Profile Picture" />
+    </div>
+  </section>
+
+  <!-- ===== Local Photos Section ===== -->
+  <section class="photos">
+    <h2>My Hometown</h2>
+    <img src="assets/birthplace1.jpg" alt="Local image 1" />
+    <img src="assets/birthplace2.jpg" alt="Local image 2" />
+  </section>
+
+  <!-- ===== Education Section ===== -->
+  <section id="education">
+    <h2>Education & Achievements</h2>
+    <ul>
+      <li><strong>IIIT Hyderabad</strong>, BTech + MS by Research, CSE (2024–2029)</li>
+      <li><strong>DPS Bangalore</strong>, Grades 11–12 (2022–2024)</li>
+      <li>UGEE Rank 25</li>
+      <li>1st Place Megathon 2024 (OSDG Track)</li>
+      <li>Fastest Female Cuber in India (2020–2023)</li>
+      <li>Multiple National Records in Speedcubing</li>
+    </ul>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, C, C++</li>
+      <li><strong>Web:</strong> HTML, CSS, React</li>
+      <li><strong>Tools:</strong> Git, Bash, Trello</li>
+      <li><strong>Databases:</strong> SQL, NoSQL</li>
+      <li><strong>Other:</strong> Content Writing, Speedcubing</li>
+    </ul>
+  </section>
+
+  <!-- ===== CV Section ===== -->
+  <section id="cv">
+    <h2>My CV</h2>
+    <a href="assets/Avani Sood (1).pdf" target="_blank" download>📄 Download My CV (PDF)</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

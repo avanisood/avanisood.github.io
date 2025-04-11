@@ -15,4 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(`[${new Date().toISOString()}] click, ${type}`);
     });
   });
+
+  const sections = document.querySelectorAll('section');
+
+  const showOnScroll = () => {
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        section.classList.add('visible');
+      }
+    });
+  };
+  
+  window.addEventListener('scroll', showOnScroll);
+  window.addEventListener('load', showOnScroll);
+  
   
