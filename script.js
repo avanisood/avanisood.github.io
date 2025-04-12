@@ -31,15 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener('load', showOnScroll);
 
   function classify(element){
-    if(element.tagname === 'IMG') return 'image';
-    if(element.tagname === 'INPUT' && element.type === 'text') return 'text input';
-    if(element.tagname === 'TEXTAREA') return 'text area';
-    if(element.tagname === 'SELECT') return 'drop-down';
-    if(element.tagname === 'BUTTON') return 'button';
-    if(element.tagname === 'A') return 'link';
-    if(element.tagname.startsWith('H')) return 'heading';
-    if(element.tagname === 'P') return 'paragraph';
-    if(element.tagname === 'DIV') return 'div container';
+    if(element.tagName === 'IMG') return 'image';
+    if(element.tagName === 'INPUT' && element.type === 'text') return 'text input';
+    if(element.tagName === 'TEXTAREA') return 'text area';
+    if(element.tagName === 'SELECT') return 'drop-down';
+    if(element.tagName === 'BUTTON') return 'button';
+    if(element.tagName === 'A') return 'link';
+    if(element.tagName.startsWith('H')) return 'heading';
+    if(element.tagName === 'P') return 'paragraph';
+    if(element.tagName === 'DIV') return 'div container';
     return element.tagName.toLowerCase();
   }
 
