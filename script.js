@@ -55,6 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const classification = classify(element);
       console.log(`${timestamp} , click , ${classification}`);
     });
+
+    function readInput(){
+      const input = document.getElementById('userInput').value;
+      console.log("User message: ", input);
+    }
   
   
   
