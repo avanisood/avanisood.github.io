@@ -4,9 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
@@ -42,6 +44,7 @@ nav a {
   color: #333;
   transition: 0.3s ease;
 }
+
 nav a:hover {
   color: #0077ff;
   border-bottom: 2px solid #0077ff;
@@ -59,6 +62,7 @@ section {
   transform: translateY(30px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
 section.visible {
   opacity: 1;
   transform: translateY(0);
@@ -77,18 +81,22 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .hero .text {
   flex: 1;
   padding-right: 20px;
 }
+
 .hero .text h2 {
   font-size: 32px;
   margin-bottom: 15px;
 }
+
 .hero .text p {
   font-size: 18px;
   color: #444;
 }
+
 .hero .image img {
   width: 250px;
   height: auto;
@@ -100,16 +108,19 @@ h2 {
 .photos {
   text-align: center;
 }
+
 .photo {
   display: inline-block;
   margin: 10px;
 }
+
 .photo img {
-  width: 200px;
-  height: auto;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .photo p {
   font-size: 14px;
   color: #555;
@@ -122,6 +133,7 @@ ul {
   margin-left: 20px;
   padding-left: 10px;
 }
+
 ul li {
   margin-bottom: 8px;
 }
@@ -137,6 +149,7 @@ ul li {
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
+
 #cv a:hover {
   background-color: #005fcc;
 }
