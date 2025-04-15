@@ -97,7 +97,7 @@
       "we", "us", "our", "ours", "ourselves",
       "they", "them", "their", "theirs", "themselves"
     ];
-    
+
     const pronounCounts = tokens.filter(t => pronouns.includes(t))
         .reduce((c, p) => ({ ...c, [p]: (c[p] || 0) + 1 }), {});
     const pronounOut = Object.entries(pronounCounts).map(([p, c]) => `${p}: ${c}`);
@@ -129,6 +129,10 @@
       console.log("Number of pronouns:", pronounOut.length);
       console.log("Number of prepositions:", prepOut.length);
       console.log("Number of articles:", articleOut.length);
+
+      if(words < 10000){
+        console.log("Warning: less than 10000 words entered!");
+      }
     }
 
     function readInput(){
