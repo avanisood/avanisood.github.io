@@ -85,15 +85,6 @@
       if(text){
         letters = text.length;
       }
-      const pronounsList = [
-        "I", "me", "my", "mine", "myself",
-        "you", "your", "yours", "yourself", "yourselves",
-        "he", "him", "his", "himself",
-        "she", "her", "hers", "herself",
-        "it", "its", "itself",
-        "we", "us", "our", "ours", "ourselves",
-        "they", "them", "their", "theirs", "themselves"
-    ];
 
     const tokens = input.toLowerCase().replace(/[^a-zA-Z\s]/g, "").split(/\s+/);
 
@@ -106,6 +97,7 @@
       "we", "us", "our", "ours", "ourselves",
       "they", "them", "their", "theirs", "themselves"
     ];
+    
     const pronounCounts = tokens.filter(t => pronouns.includes(t))
         .reduce((c, p) => ({ ...c, [p]: (c[p] || 0) + 1 }), {});
     const pronounOut = Object.entries(pronounCounts).map(([p, c]) => `${p}: ${c}`);

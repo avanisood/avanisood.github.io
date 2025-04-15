@@ -7,3 +7,4 @@ Assumptions:
 
     > Not entirely sure what group by meant but I have tokenised it and returned the counts as required.
     
+    > Added a warning for less than 10000 words as I wasn't entirely sure what sir meant by text box with more than 10000 words.
